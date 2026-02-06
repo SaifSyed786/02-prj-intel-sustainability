@@ -1,143 +1,368 @@
+<!-- index.html (uses YOUR exact folder/file names: img/1.jpg ... img/4.jpg and img/intel-header-logo.svg) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Intel: Sustainability Through the Ages</title>
+  <title>Saif Syed | Portfolio</title>
+  <meta name="description" content="Single-page portfolio showcasing projects, skills, and contact information." />
+
+  <!-- Icons (Font Awesome) -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header / Hero Section -->
-  <header>
-    <div>
-      <!-- Ask Copilot to teach you about `.svg`. 🙂 You'll need to resize the logo with CSS. -->
-      <img src="img/intel-header-logo.svg" alt="Intel Logo" />
-      <!-- Main Heading -->
-      <h1>
-        Sustainability Through the Ages
-      </h1>
+  <!-- Header + Nav -->
+  <header class="site-header" id="home">
+    <nav class="nav">
+      <a class="brand" href="#home" aria-label="Go to top">
+        <span class="brand-mark">SS</span>
+        <span class="brand-text">Saif Syed</span>
+      </a>
 
-      <!-- Subheading / Description -->
-      <p>
-        Explore Intel's journey through time, discovering how our commitment
-        to innovation has shaped a more sustainable future for technology 
-        and our planet.
-      </p>
-    </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#intel-timeline">Timeline</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a class="btn btn-ghost" href="https://github.com/GCA-Classroom/02-prj-intel-sustainability" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-github"></i> Repo
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="pill">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          HTML/CSS • AI-assisted • GitHub Pages
+        </p>
+
+        <h1>
+          Saif Syed
+          <span class="accent">Portfolio</span>
+        </h1>
+
+        <p class="hero-sub">
+          I build clean, responsive web pages and ship them with solid fundamentals:
+          structure, styling consistency, and deployability.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn" href="#projects"><i class="fa-solid fa-rocket"></i> View Projects</a>
+          <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+        </div>
+
+        <div class="hero-meta">
+          <a href="mailto:saif.syed@my.utsa.edu">
+            <i class="fa-solid fa-envelope"></i> saif.syed@my.utsa.edu
+          </a>
+          <span class="dot">•</span>
+          <a href="https://www.linkedin.com/in/tahoora-nai-1ba611329/" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Profile card">
+        <div class="avatar" aria-hidden="true">
+          <i class="fa-solid fa-user-astronaut"></i>
+        </div>
+        <h2>Saif Syed</h2>
+        <p class="muted">Front-end fundamentals • Clean layout • Practical execution</p>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">1+</div>
+            <div class="stat-label">Featured Project</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Week 2</div>
+            <div class="stat-label">Course</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Live</div>
+            <div class="stat-label">Deployment</div>
+          </div>
+        </div>
+      </aside>
+    </section>
   </header>
 
-  <!-- Timeline Cards Section -->
-  <section>
+  <main id="main">
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-lead">
+          I’m developing front-end skills with a focus on semantic HTML, responsive CSS, and clean UI structure.
+          I use AI to accelerate brainstorming/debugging, then validate changes by testing and explaining decisions clearly.
+        </p>
 
-    <!-- Card 1: 1968 -->
-    <div>
-      <h2>1968</h2>
-      <h3>Intel Founded</h3>
-      <!-- Add image -->
-      <p>
-        Robert Noyce and Gordon Moore rename the newly formed company 
-        NM Electronics to Intel Corporation, laying the foundation for 
-        decades of technological innovation.
-      </p>
-    </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3><i class="fa-solid fa-bullseye"></i> Focus</h3>
+            <p>Responsive layout, reusable styling patterns, and readable page structure.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Workflow</h3>
+            <p>Prompt → draft → test → refine. If it breaks on mobile, it’s not done.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Card 2: 1971 -->
-    <div>
-      <h2>1971</h2>
-      <h3>First Microprocessor</h3>
-      <!-- Add image -->
-      <p>
-        Intel debuts the 4004, the world's first commercial microprocessor, 
-        igniting the microprocessor revolution and propelling the future 
-        of computing devices.
-      </p>
-    </div>
+    <!-- Skills -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-lead">Core tools and strengths (icons included).</p>
 
-    <!-- Card 3: 1978 -->
-    <div>
-      <h2>1978</h2>
-      <h3>8086 Processor</h3>
-      <!-- Add image -->
-      <p>
-        Launch of the 8086 processor, establishing the x86 architecture 
-        that drives countless PCs and servers in the modern era.
-      </p>
-    </div>
+        <div class="skills">
+          <div class="skill"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+          <div class="skill"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+          <div class="skill"><i class="fa-brands fa-js"></i><span>JavaScript (basic)</span></div>
+          <div class="skill"><i class="fa-brands fa-git-alt"></i><span>Git / GitHub</span></div>
+          <div class="skill"><i class="fa-solid fa-mobile-screen-button"></i><span>Responsive Design</span></div>
+          <div class="skill"><i class="fa-solid fa-robot"></i><span>AI-assisted Dev</span></div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Card 4: 1985 -->
-    <div>
-      <h2>1985</h2>
-      <h3>386 Processor</h3>
-      <!-- Add image -->
-      <p>
-        Intel introduces the 386 processor with 32-bit architecture, 
-        ushering in a new era of performance and multitasking for 
-        personal computers.
-      </p>
-    </div>
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-lead">
+          Featured project below. This page is designed to scale as I add more work.
+        </p>
 
-    <!-- Card 5: 2006 -->
-    <div>
-      <h2>2006</h2>
-      <h3>Peak GHG Emissions</h3>
-      <!-- Add image -->
-      <p>
-        This year marks Intel's highest annual greenhouse gas emissions 
-        for operations. Over subsequent years, Intel invests heavily in 
-        chemical abatement, renewable energy, and energy-efficient 
-        manufacturing to reverse this trend.
-      </p>
-    </div>
+        <div class="projects-grid">
+          <article class="project card">
+            <div class="project-top">
+              <h3>Intel: Sustainability Through the Ages</h3>
+              <span class="tag tag-live"><i class="fa-solid fa-check"></i> Built</span>
+            </div>
+            <p class="muted">
+              Timeline-based webpage with card layout, hover polish, and responsive styling.
+            </p>
+            <div class="project-links">
+              <a class="btn btn-small btn-ghost" href="https://github.com/GCA-Classroom/02-prj-intel-sustainability" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
 
-    <!-- Card 6: 2020 -->
-    <div>
-      <h2>2020</h2>
-      <h3>RISE Strategy</h3>
-      <!-- Add image -->
-      <p>
-        Intel launches its RISE (Responsible, Inclusive, Sustainable, 
-        Enabling) strategy and 2030 goals, aiming to drive industry-wide 
-        progress on climate action, water stewardship, and waste reduction.
-      </p>
-    </div>
+              <!-- If/when you have GitHub Pages, replace # with your live URL -->
+              <a class="btn btn-small" href="#intel-timeline">
+                <i class="fa-solid fa-arrow-down"></i> View Timeline
+              </a>
+            </div>
+          </article>
 
-    <!-- Card 7: 2022 -->
-    <div>
-      <h2>2022</h2>
-      <h3>Net-Zero By 2040</h3>
-      <!-- Add image -->
-      <p>
-        Intel announces its commitment to achieve net-zero greenhouse 
-        gas emissions (Scope 1 and 2) across its global operations 
-        by 2040, building on years of environmental initiatives.
-      </p>
-    </div>
+          <article class="project card">
+            <div class="project-top">
+              <h3>Next Project</h3>
+              <span class="tag tag-soon"><i class="fa-solid fa-hourglass"></i> Coming soon</span>
+            </div>
+            <p class="muted">Placeholder slot for your next assignment/project.</p>
+            <div class="project-links">
+              <a class="btn btn-small btn-ghost" href="https://www.linkedin.com/in/tahoora-nai-1ba611329/" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </article>
 
-    <!-- Card 8: 2023 -->
-    <div>
-      <h2>2023</h2>
-      <h3>Renewable Electricity</h3>
-      <!-- Add image -->
-      <p>
-        The company achieves 99% renewable electricity usage worldwide, 
-        helping to drastically lower carbon emissions and driving progress 
-        toward Intel's long-term sustainability goals.
-      </p>
-    </div>
+          <article class="project card">
+            <div class="project-top">
+              <h3>Contact Me</h3>
+              <span class="tag"><i class="fa-solid fa-message"></i> Open</span>
+            </div>
+            <p class="muted">Fastest response: email.</p>
+            <div class="project-links">
+              <a class="btn btn-small" href="mailto:saif.syed@my.utsa.edu">
+                <i class="fa-solid fa-envelope"></i> Email
+              </a>
+            </div>
+          </article>
+        </div>
 
-    <!-- Card 9: 2024 -->
-    <div>
-      <h2>2024</h2>
-      <h3>Sustainability Summit</h3>
-      <!-- Add image -->
-      <p>
-        Intel hosts its first Sustainability Summit, uniting suppliers, 
-        government officials, and industry leaders to collaborate on 
-        next-generation sustainable semiconductor manufacturing.
-      </p>
+        <!-- Intel Timeline (uses YOUR images exactly: img/1.jpg ... img/4.jpg and img/intel-header-logo.svg) -->
+        <section class="timeline-wrap" id="intel-timeline" aria-label="Intel sustainability timeline">
+          <div class="timeline-header">
+            <div class="timeline-brand">
+              <img class="intel-logo" src="img/intel-header-logo.svg" alt="Intel logo" />
+              <div>
+                <h2 class="timeline-title">Sustainability Through the Ages</h2>
+                <p class="timeline-sub">
+                  Explore Intel's journey through time and how innovation supports a more sustainable future.
+                </p>
+              </div>
+            </div>
+            <p class="timeline-hint">Scroll to view timeline • Hover over cards</p>
+          </div>
+
+          <div class="timeline-grid">
+            <div class="t-card">
+              <img class="t-img" src="img/1.jpg" alt="Illustration representing Intel's early semiconductor era (1968)." />
+              <h2>1968</h2>
+              <h3>Intel Founded</h3>
+              <p>
+                Robert Noyce and Gordon Moore rename the newly formed company NM Electronics to Intel Corporation,
+                laying the foundation for decades of technological innovation.
+              </p>
+            </div>
+
+            <div class="t-card">
+              <img class="t-img" src="img/2.jpg" alt="Close-up of a microprocessor on a circuit board (1971 milestone)." />
+              <h2>1971</h2>
+              <h3>First Microprocessor</h3>
+              <p>
+                Intel debuts the 4004, the world's first commercial microprocessor, igniting the microprocessor revolution
+                and propelling the future of computing devices.
+              </p>
+            </div>
+
+            <div class="t-card">
+              <img class="t-img" src="img/3.jpg" alt="Intel 8086 chip imagery (1978 milestone)." />
+              <h2>1978</h2>
+              <h3>8086 Processor</h3>
+              <p>
+                Launch of the 8086 processor, establishing the x86 architecture that drives countless PCs and servers in the modern era.
+              </p>
+            </div>
+
+            <div class="t-card">
+              <img class="t-img" src="img/4.jpg" alt="Intel 386-era chip imagery (1985 milestone)." />
+              <h2>1985</h2>
+              <h3>386 Processor</h3>
+              <p>
+                Intel introduces the 386 processor with 32-bit architecture, ushering in a new era of performance and multitasking for personal computers.
+              </p>
+            </div>
+
+            <div class="t-card">
+              <h2>2006</h2>
+              <h3>Peak GHG Emissions</h3>
+              <p>
+                This year marks Intel's highest annual greenhouse gas emissions for operations. Over subsequent years, Intel invests heavily in
+                chemical abatement, renewable energy, and energy-efficient manufacturing to reverse this trend.
+              </p>
+            </div>
+
+            <div class="t-card">
+              <h2>2020</h2>
+              <h3>RISE Strategy</h3>
+              <p>
+                Intel launches its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy and 2030 goals, aiming to drive industry-wide progress
+                on climate action, water stewardship, and waste reduction.
+              </p>
+            </div>
+
+            <div class="t-card">
+              <h2>2022</h2>
+              <h3>Net-Zero By 2040</h3>
+              <p>
+                Intel announces its commitment to achieve net-zero greenhouse gas emissions (Scope 1 and 2) across its global operations by 2040,
+                building on years of environmental initiatives.
+              </p>
+            </div>
+
+            <div class="t-card">
+              <h2>2023</h2>
+              <h3>Renewable Electricity</h3>
+              <p>
+                The company achieves 99% renewable electricity usage worldwide, helping to drastically lower carbon emissions and driving progress
+                toward Intel's long-term sustainability goals.
+              </p>
+            </div>
+
+            <div class="t-card">
+              <h2>2024</h2>
+              <h3>Sustainability Summit</h3>
+              <p>
+                Intel hosts its first Sustainability Summit, uniting suppliers, government officials, and industry leaders to collaborate on
+                next-generation sustainable semiconductor manufacturing.
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-lead">Simple and direct.</p>
+
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:saif.syed@my.utsa.edu">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">saif.syed@my.utsa.edu</div>
+            </div>
+          </a>
+
+          <a class="contact-item" href="https://github.com/GCA-Classroom/02-prj-intel-sustainability" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <div class="contact-label">GitHub Repo</div>
+              <div class="contact-value">02-prj-intel-sustainability</div>
+            </div>
+          </a>
+
+          <a class="contact-item" href="https://www.linkedin.com/in/tahoora-nai-1ba611329/" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">Profile</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Saif Syed</span>
+      <span class="muted">Built with HTML/CSS • Deployed on GitHub Pages</span>
     </div>
-  </section>
-  <p>Scroll to view timeline | Hover over cards to learn more!</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector(".nav-toggle");
+    const links = document.querySelector(".nav-links");
+    toggle.addEventListener("click", () => {
+      const expanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!expanded));
+      links.classList.toggle("nav-links-open");
+    });
+
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
+
+
